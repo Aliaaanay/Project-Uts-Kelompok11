@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postingan Blog | Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Baca detail lengkap tentang postingan blog ini dan berikan komentar Anda.">
+</head>
+<body>
+    
+    <div id="read-progress-bar"></div>
+
+    <header class="header">
+        <div class="container nav-bar">
+            <div class="logo" role="banner"><a href="index.html">MyBlog</a></div>
+            <nav class="nav-links">
+                <a href="index.html">&larr; Kembali</a>
+                <button id="dark-mode-toggle" aria-label="Ganti Mode Tampilan">Mode Gelap 🌙</button>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a> &gt; 
+            <a href="#">Web Development</a> &gt; 
+            <span id="breadcrumb-title">...</span>
+        </nav>
+    </div>
+
+    <main class="container">
+        <article id="post-detail-container">
+            <section class="post-detail">
+                <h1 id="post-title">Memuat Judul Postingan...</h1>
+                
+                <div class="post-meta">
+                    <span class="meta-item">✍️ Oleh: <strong id="post-author">Anonim</strong></span> 
+                    <span class="meta-item">📅 Tanggal: <strong id="post-date">10 November 2025</strong></span> 
+                    <span class="meta-item">🏷️ Kategori: <a href="#">Web Development</a></span>
+                </div>
+                
+                <div id="post-content" class="post-content">
+                    <p>Memuat konten...</p>
+                </div>
+
+                <div class="post-share">
+                    <span class="share-label">Bagikan:</span>
+                    <a href="https://twitter.com/intent/tweet?url=#" target="_blank" class="share-btn twitter" rel="noopener noreferrer" aria-label="Bagikan ke Twitter">Twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#" target="_blank" class="share-btn facebook" rel="noopener noreferrer" aria-label="Bagikan ke Facebook">Facebook</a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=#" target="_blank" class="share-btn linkedin" rel="noopener noreferrer" aria-label="Bagikan ke LinkedIn">LinkedIn</a>
+                </div>
+
+                </section>
+
+            <section class="author-box" aria-label="Tentang Penulis">
+                <div class="author-avatar">A</div>
+                <div class="author-info">
+                    <h4>Tentang Penulis Anonim</h4>
+                    <p>Penulis konten ini adalah seorang penggemar Vanilla JavaScript dan CSS modern. Fokus pada pembuatan website yang cepat, ringan, dan sangat interaktif.</p>
+                </div>
+            </section>
+            
+            <section id="comments-section">
+                <h3>Komentar</h3>
+                <div id="comments-list">
+                    <p class="empty-state">Belum ada komentar.</p>
+                </div>
+
+                <form id="comment-form">
+                    <label for="comment-text">Tambahkan Komentar Anda:</label>
+                    <textarea id="comment-text" required placeholder="Tulis komentar di sini..."></textarea>
+                    <button type="submit">Kirim Komentar</button>
+                </form>
+            </section>
+            
+            <section class="related-posts">
+                <h3>Baca Juga:</h3>
+                <div class="related-list">
+                    <a href="post-detail.html?id=2" class="related-card">Pentingnya Desain Responsif</a>
+                    <a href="post-detail.html?id=3" class="related-card">Tips dan Trik JavaScript Modern</a>
+                </div>
+            </section>
+            
+        </article>
+    </main>
+    
+    <div class="mobile-interaction-bar">
+        <button id="like-button" aria-label="Suka postingan ini">
+            👍 Suka (<span id="like-count">0</span>)
+        </button>
+        <a href="#comments-section" class="comment-scroll-btn">Komentar</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Blog Interaktif Sederhana. Hak Cipta Dilindungi.</p>
+            <div class="footer-links">
+                <a href="#">Tentang Kami</a> | 
+                <a href="#">Kebijakan Privasi</a> | 
+                <a href="#">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Memperbarui tahun secara otomatis di footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

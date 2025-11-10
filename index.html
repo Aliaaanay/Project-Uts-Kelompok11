@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Interaktif Sederhana | Daftar Postingan</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Kumpulan artikel dan tips terbaru tentang pengembangan website interaktif menggunakan HTML, CSS, dan JavaScript.">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-bar">
+            <div class="logo" role="banner"><a href="index.html">MyBlog</a></div>
+            <nav class="nav-links">
+                <a href="index.html" aria-current="page">Home</a>
+                <button id="dark-mode-toggle" aria-label="Ganti Mode Tampilan">Mode Gelap 🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" aria-label="Pengantar Blog">
+        <div class="container">
+            <hgroup>
+                <h2> Selamat Datang di Dunia Web Interaktif!</h2>
+                <p>Jelajahi tips dan tutorial terbaru seputar **HTML, CSS, dan Vanilla JavaScript** untuk membangun pengalaman web yang menarik dan modern.</p>
+            </hgroup>
+            <a href="#posts-filter" class="cta-button" role="button">Lihat Semua Artikel</a>
+        </div>
+    </section>
+
+    <main class="container main-layout">
+        
+        <div class="main-content">
+            <div class="content-header" id="posts-filter">
+                <h1>Daftar Postingan Terbaru</h1>
+                
+                <div class="post-controls">
+                    <label for="sort-by" class="control-label">Urutkan:</label>
+                    <select id="sort-by" aria-label="Urutkan postingan berdasarkan" title="Pilih kriteria pengurutan">
+                        <option value="date">Terbaru (Default)</option>
+                        <option value="likes">Terpopuler (Suka)</option>
+                        <option value="title">Judul (A-Z)</option>
+                    </select>
+                    <button class="filter-button" aria-controls="posts-container" aria-expanded="false">
+                        <span aria-hidden="true">🏷️</span> Filter Kategori
+                    </button>
+                </div>
+            </div>
+            
+            <section id="posts-container" aria-live="polite">
+                <p class="loading-state">Memuat postingan...</p>
+            </section>
+        </div>
+
+        <aside class="sidebar" aria-label="Informasi Tambahan dan Pencarian">
+            <div class="sidebar-widget search-widget">
+                <h3>Cari Artikel</h3>
+                <form onsubmit="return false;"> 
+                    <input type="text" placeholder="Masukkan kata kunci..." aria-label="Kolom pencarian artikel">
+                    <button type="submit" aria-label="Tombol cari">Cari</button>
+                </form>
+            </div>
+            <div class="sidebar-widget categories-widget">
+                <h3>Kategori Populer</h3>
+                <ul>
+                    <li><a href="#">JavaScript</a> (5)</li>
+                    <li><a href="#">Desain Responsif</a> (3)</li>
+                    <li><a href="#">Tips CSS</a> (8)</li>
+                    <li><a href="#">Proyek Mini</a> (2)</li>
+                </ul>
+            </div>
+            <div class="sidebar-widget latest-posts-widget">
+                <h3>Paling Banyak Dilihat</h3>
+                <ul id="latest-posts-list">
+                    <li><a href="post-detail.html?id=1">Memulai dengan Website Interaktif</a></li>
+                    <li><a href="post-detail.html?id=2">Pentingnya Desain Responsif</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Blog Interaktif Sederhana. Hak Cipta Dilindungi.</p>
+            <div class="footer-links">
+                <a href="#">Tentang Kami</a> | 
+                <a href="#">Kebijakan Privasi</a> | 
+                <a href="#">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

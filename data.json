@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Memulai dengan Website Interaktif",
+        "excerpt": "Pelajari langkah-langkah dasar untuk membuat website yang tidak hanya statis, tetapi juga merespons interaksi pengguna menggunakan JavaScript.",
+        "content": "Website interaktif adalah masa depan. Mereka tidak hanya menampilkan informasi, tetapi juga memungkinkan pengguna untuk berpartisipasi, seperti memberikan komentar, menyukai konten, atau mengubah tampilan (misalnya mode gelap). Dalam postingan ini, kita akan fokus pada pentingnya **Vanilla JavaScript** untuk menambahkan interaktivitas tanpa bergantung pada library yang besar. Ini adalah postingan yang sempurna untuk memulai perjalanan web development Anda.",
+        "likes": 15,
+        "author": "WebDev Master",
+        "category": "JavaScript",
+        "date": "2025-11-10",
+        "image_url": "images/js_interactive.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Pentingnya Desain Responsif",
+        "excerpt": "Bagaimana CSS Grid dan Flexbox mengubah cara kita mendesain tata letak agar terlihat sempurna di semua perangkat, dari ponsel hingga desktop.",
+        "content": "Desain responsif memastikan pengalaman pengguna yang baik, apa pun perangkat yang mereka gunakan. Dengan **CSS Flexbox** dan **Grid**, kita dapat membuat tata letak yang fleksibel dan mudah diatur. Fleksibilitas ini sangat penting untuk blog sederhana agar konten selalu mudah dibaca. Pastikan Anda selalu menggunakan unit relatif seperti `rem` atau `%` daripada `px` untuk skala yang lebih baik. Ini adalah kunci untuk modern web design.",
+        "likes": 22,
+        "author": "CSS Expert",
+        "category": "Desain Responsif",
+        "date": "2025-10-25",
+        "image_url": "images/responsive_design.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Tips dan Trik JavaScript Modern",
+        "excerpt": "Menggunakan fitur-fitur ES6+ seperti `async/await` dan *Arrow Functions* untuk menulis kode yang lebih bersih dan efisien.",
+        "content": "JavaScript terus berkembang. Menggunakan fitur-fitur modern seperti **`const`** dan **`let`** (bukan `var`), *Destructuring*, dan *Spread Operator* dapat membuat kode Anda lebih mudah dipahami dan dipelihara. Untuk menangani operasi asinkron (seperti mengambil data dari file JSON kita), **`async/await`** adalah cara yang jauh lebih elegan daripada *callback hell*. Pelajari cara menggunakannya untuk proyek Anda.",
+        "likes": 10,
+        "author": "WebDev Master",
+        "category": "JavaScript",
+        "date": "2025-10-18",
+        "image_url": "images/js_modern.jpg"
+    }
+]
